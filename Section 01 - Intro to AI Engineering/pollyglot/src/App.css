@@ -1,0 +1,147 @@
+/* General Styles*/
+html, body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+h1, p {
+    margin: 0;
+}
+
+.border {
+    border: 2px solid purple;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+.header h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 800;
+    color: #32CD32;
+    font-size: 43px;
+    line-height: 150%;
+}
+
+.header-container {
+    height: 213px;
+    position: relative;
+}
+
+.header-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.header-title-container {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    display: flex;
+    gap: 15px;
+
+}
+
+.header-title {
+    text-align: left;
+    width: max-content;
+    color: #fff;
+}
+
+.header-title-img {
+    width: 95px;
+    object-fit: contain;
+}
+
+/* Body Styles */
+
+.body-section {
+    height: 500px;
+    border-radius: 15px;
+    border: 4px solid #252F42;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+    margin: 30px auto;
+    gap: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 450px;
+
+}
+
+.blue-title {
+    color: #035A9D;
+    line-height: 150%; /* 30px */
+}
+
+.text-area {
+    width: 317px;
+    height: 118px;
+    border-radius: 8px;
+    background: #EFF0F4;
+    border: none;
+    padding: 10px;
+    resize: none;
+    color: #333;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+form {
+    align-self: flex-start;
+    margin-left: 45px;
+}
+
+.form-el {
+    color: #333;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 5px;
+}
+
+.flag {
+    width: 30px;
+    height: 20px;
+    object-fit: cover;
+    border: 1px solid #999;
+}
+
+.submit-btn {
+    margin-top: auto;
+    width: 322px;
+    height: 50px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    background: #035A9D;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    border: 2px solid #252F42;
+}
+
+.submit-btn:active {
+    cursor: pointer;
+    border: 2px solid #5a729e;
+    background: #068df5;
+}
+
+@media screen and (max-width: 575px) {
+    .body-section {
+        margin: 30px 15px;
+    }
+}
