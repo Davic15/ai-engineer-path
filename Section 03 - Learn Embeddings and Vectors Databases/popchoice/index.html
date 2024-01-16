@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <title>PopChoice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<main class="container">
+    <img class="popcorn" src="./assets/PopChoiceIcon.png" alt="Popcorn">
+    <h1>PopChoice</h1>
+    <div id="content">
+        <form id="questioner">
+            <div class="cards">
+                <div class="card">
+                    <label class="question" for="favorite-movie">What's your favorite movie and why?</label>
+                    <div class="answer">
+                        <textarea id="favorite-movie" name="favorite-movie"
+                                  placeholder="Star Wars, because I am a fan of space and fantasy movies."></textarea>
+                    </div>
+                </div>
+                <div class="card">
+                    <label class="question" for="your-mood">Are you in the mood for something new or a classic?</label>
+                    <div class="answer">
+                        <textarea id="your-mood" name="your-mood"
+                                  placeholder="I want to watch movies that were released after 1990"></textarea>
+                    </div>
+                </div>
+                <div class="card">
+                    <label class="question" for="have-fun">Do you want to have fun or do you want something
+                        serious?</label>
+                    <div class="answer">
+                        <textarea id="have-fun" name="have-fun"
+                                  placeholder="I want to watch something stupid and fun"></textarea>
+                    </div>
+                </div>
+                <button type="submit" id="submit-btn">Let's Go</button>
+            </div>
+        </form>
+    </div>
+    <button id="after-btn">Go Again</button>
+</main>
+<script type="module" src="index.js"></script>
+</body>
+</html> 

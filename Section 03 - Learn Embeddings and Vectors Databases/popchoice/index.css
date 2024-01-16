@@ -1,0 +1,137 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.question {
+    font-weight: 500;
+}
+
+.container {
+    width: 400px;
+    height: 850px;
+    padding-block: 10px;
+    background-color: #000c36;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-block: 3rem
+}
+
+.container img {
+    width: 90px;
+    margin-top: 3rem;
+    object-fit: contain;
+}
+
+.container h1 {
+    color: #FFFFFF;
+    font-size: 46px;
+    font-weight: normal;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.cards {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.card {
+    margin-inline: 3rem;
+    margin-bottom: 2rem;
+}
+
+.card p {
+    text-align: left;
+    font-size: 16px;
+}
+
+textarea {
+    background-color: #3b4877;
+    min-height: 3rem;
+    min-width: 100%;
+    color: #FFFFFF;
+
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 0.5rem;
+    overflow: hidden;
+    resize: none;
+}
+
+#your-mood, #have-fun {
+    min-height: 2rem;
+}
+
+#your-mood::placeholder, #have-fun::placeholder, #favorite-movie::placeholder {
+    color: #928c50;
+}
+
+.answer {
+    margin-top: 0.5rem;
+}
+
+button {
+    font-size: 30px;
+    color: #000c36;
+    background-color: #51e08a;
+    border-radius: 10px;
+    font-weight: 700;
+    border: none;
+    width: 80%;
+    margin-left: 1.5rem;
+    padding-block: 1rem;
+    opacity: 1;
+    transition: all 300ms ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.content {
+    display: grid;
+    place-items: center;
+    margin-inline: 3rem;
+}
+
+.movie-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+}
+
+.movie-description {
+    font-size: 18px;
+    font-weight: normal;
+    color: #FFFFFF;
+    margin-bottom: 4rem;
+}
+
+#after-btn {
+    display: none;
+    font-size: 30px;
+    color: #000c36;
+    background-color: #51e08a;
+    border-radius: 10px;
+    font-weight: 700;
+    border: none;
+    width: 80%;
+    margin-left: 0;
+    padding-block: 1rem;
+}

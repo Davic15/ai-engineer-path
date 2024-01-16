@@ -1,0 +1,15 @@
+{
+  "name": "project",
+  "dependencies": {
+    "langchain": "0.0.167"
+  },
+  "devDependencies": {
+    "vite": "latest"
+  },
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+}
