@@ -1,0 +1,19 @@
+{
+  "name": "ai-personal-assistant",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "dependencies": {
+    "@supabase/supabase-js": "2.36.0",
+    "langchain": "0.0.152",
+    "openai": "^4.24.7"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.8"
+  }
+}

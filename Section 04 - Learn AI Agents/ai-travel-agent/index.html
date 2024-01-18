@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <title>AI Travel Agent</title>
+</head>
+<body>
+<main>
+    <section class="home" id='home'>
+        <img src='./assets/ai-travel-agent.png' alt='image of cat travel agent' class="cat"/>
+        <button class='btn' id='home-btn'>Let's go!</button>
+    </section>
+
+    <section class='booking-container' id='booking-container'>
+        <div class='counter-container'>
+            <h3>Number of travellers</h3>
+            <div class='traveler-counter-container'>
+                <button class='counter-minus' id='minus'>-</button>
+                <div class='counter-count'>
+                    <p class='count' id='counter'>-</p>
+                </div>
+                <button class='counter-add' id='add'>+</button>
+            </div>
+        </div>
+
+        <div class='destination-container'>
+            <h3>Flying from</h3>
+            <input
+                    required
+                    id='departure-location'
+                    type='text'
+                    placeholder='Departure location'
+            />
+            <h3>Flying to</h3>
+            <input
+                    required
+                    id='destination-location'
+                    type='text'
+                    placeholder='Destination location'
+            />
+        </div>
+
+        <div className='dates-container'>
+            <h3>From Date</h3>
+            <input
+                    required
+                    id='start-date'
+                    type='date'
+            />
+            <h3>To Date</h3>
+            <input
+                    required
+                    id='end-date'
+                    type='date'
+            />
+        </div>
+
+        <div className='budget-container'>
+            <h3>Budget</h3>
+            <input
+                    required
+                    id='budget'
+                    type='number'
+                    placeholder='Enter your budget'
+            />
+        </div>
+        <button class='btn' id='submit-btn'>Plan my trip!</button>
+    </section>
+
+    <section class='booked-container' id='booked-container'>
+        <h1>Your Trip Details</h1>
+        <div class="bookedpage-inner">
+            <div class='dates'>
+                <span id='from-date'>From:</span>
+                <span id='to-date'>To:</span>
+            </div>
+
+            <div class='location'>
+                <span id='departure'>departure</span>
+                &rarr;
+                <span id='destination'>destination</span>
+            </div>
+
+            <div>
+                <h2>Weather</h2>
+                <div class='response'>
+                    <p id='weather'></p>
+                </div>
+            </div>
+
+            <div>
+                <h2>Flights</h2>
+                <div class='response'>
+                    <p id='flight-message'> <!--agent flight reco--> </p>
+                    <button class='btn'>Book</button>
+                </div>
+            </div>
+
+            <div>
+                <h2>Hotel</h2>
+                <div class='response'>
+                    <p id='hotel-reco'> <!-- agent Hotel reco--> </p>
+                    <button class='btn'>Book</button>
+                </div>
+            </div>
+
+            <div>
+                <h2>Activities</h2>
+                <div class='response'>
+                    <p id='activity-reco'> <!-- agent Hotel reco--> </p>
+                </div>
+            </div>
+        </div>
+        <button class='btn' id='back-btn'>Once again</button>
+    </section>
+
+    <section>
+        <div class='loader' id='loader'>
+            <div class="page">
+                <div class="container">
+                    <div class="ring"></div>
+                    <div class="ring"></div>
+                    <div class="ring"></div>
+                    <div class="ring"></div>
+                    <div class="h3">loading</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script type="module" src="/main.js"></script>
+</body>
+</html>

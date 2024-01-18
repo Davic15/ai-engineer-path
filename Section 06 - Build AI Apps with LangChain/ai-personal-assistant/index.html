@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@300;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>F.R.I.D.A.Y</title>
+</head>
+<body>
+<header>
+    <img src='./assets/friday.jpg' alt='friday ai image' class='img-hero'/>
+    <h1>F.R.I.D.A.Y</h1>
+</header>
+<main>
+    <div class='chatbot-conversation-container' id='chatbot-conversation-container'>
+    </div>
+    <form>
+        <textarea name='user-input' id='user-input' placeholder="What's happening?" required></textarea> <br/>
+        <button class='submit-btn' id='submit-btn'>Ask</button>
+    </form>
+</main>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
